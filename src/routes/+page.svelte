@@ -2,7 +2,13 @@
 	<section class="w-full py-6 md:py-12 lg:py-16 xl:py-24">
 		<div class="container px-4 md:px-6">
 			<div class="flex flex-col items-center justify-center gap-6 lg:flex-row-reverse lg:gap-12">
-				<img src="/produkt.jpeg" alt="Product" class="w-full max-w-md" />
+				<img
+					src="/produkt.jpeg"
+					alt="Product"
+					class="w-full max-w-md"
+					width="400px"
+					height="400px"
+				/>
 				<div class="flex flex-col justify-center space-y-4">
 					<div class="space-y-2">
 						<h1 class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
