@@ -1,12 +1,12 @@
 <script>
-	import { addToCart } from '$lib/store/cartStore.js';
-
+	// import { addToCart } from '$lib/store/cartStore.js';
+	import AddToCart from '$lib/components/AddToCart.svelte';
 	export let data;
 	export let product = data.product;
 
-	const handleOnClick = () => {
-		addToCart(product);
-	};
+	// const handleOnClick = () => {
+	// 	addToCart(product);
+	// };
 </script>
 
 <div class="flex w-full flex-col items-center justify-center">
@@ -24,12 +24,7 @@
 					{product.price}
 					{product.currency}
 				</span>
-				<button
-					on:click={handleOnClick}
-					class="text-primary-foreground bg-foreground inline-flex h-10 w-72 items-center justify-center rounded-xl px-4 py-2 text-sm font-medium transition-colors hover:cursor-pointer hover:bg-white/80"
-				>
-					Add to cart
-				</button>
+				<AddToCart {product} />
 			</div>
 		</div>
 	</div>
